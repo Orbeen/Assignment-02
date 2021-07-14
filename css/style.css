@@ -1,0 +1,300 @@
+/*  =========================
+          All CSS Style
+    =========================*/
+
+/* google fonts imported link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+}
+/* Header Style */
+header{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 677px;
+    transition: 0.3s;
+}
+header:hover{
+    background-color: #0835fc;
+    
+}
+.container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_title{
+    color: white;
+    padding-right: 102px;
+    font-size: 56px;
+}
+.banner{
+    margin-top: 156px;
+    width: 556px;
+    height: 438px;
+}
+.btn {
+    width: 168px;
+    height: auto;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #E02C6D;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #f7367c;
+}
+.fas {
+    margin-left: 10px;
+    font-size: 14px;
+    
+}
+.top-players{
+    text-align: center;
+    margin: 70px;
+    font-size: 40px;
+}
+/* End Header Style */
+
+
+/* Grid Layout Section */
+.frame_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-gap: 1em;
+    justify-content: center;
+    padding-bottom: 70px;
+    
+}
+.frame {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px #d1d1d1;
+
+}
+
+article img{
+    width: 100%;
+}
+
+/* Highlights */
+.highlights{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 0px 0px 10px 1px #d1d1d1;
+}
+.highlights h1{
+    font-size: 40px;
+    color: rgb(27, 27, 27);
+}
+.highlights-video{
+    width: 50%;
+    padding: 40px;
+}
+.video-stream{
+    width: 100%;
+}
+/* Footer */
+footer{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 30px;
+}
+footer img{
+    width: 483px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box img{
+    width: 50%;
+    height: auto;
+}
+
+
+/* -------------------------------------
+            Media Query
+----------------------------------------*/
+/* Mobile Responsive */
+@media only screen and (min-width: 800px) and (max-width: 1080px){
+
+    header {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .header_title {
+        color: white;
+        padding: 20px;
+        font-size: 38px;
+    }
+    .container {
+        width: 100%;
+    }
+    .frame_grid {
+        grid-template-columns: repeat(3, 318px);
+    }
+    .banner {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .highlights {
+        width: 91%;
+        display: block;
+        padding: 10px;
+    }
+    .highlights-video {
+        padding: 0;
+        width: 100%;
+    }
+    .highlights h1 {
+        font-size: 30px;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+    .video-stream {
+        margin-top: 20px;
+    }
+    footer img {
+        width: 65%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px){
+    p{
+        font-size: 14px;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .header_title {
+        color: white;
+        padding: 20px;
+        font-size: 38px;
+    }
+    .container {
+        width: 100%;
+    }
+    .frame_grid {
+        grid-template-columns: repeat(2, 351px);
+    }
+    .banner {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .highlights {
+        width: 91%;
+        display: block;
+        padding: 10px;
+    }
+    .highlights-video {
+        padding: 0;
+        width: 100%;
+    }
+    .highlights h1 {
+        font-size: 30px;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+    .video-stream {
+        margin-top: 20px;
+    }
+    footer img {
+        width: 65%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 599px){
+    .header_title {
+        color: white;
+        padding: 20px;
+        font-size: 38px;
+    }
+    .container {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+    .frame_grid {
+        grid-template-columns: repeat(1, 330px);
+    }
+    .col {
+        width: 301px;
+        overflow: hidden;
+    }
+    .banner {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .top-players {
+        text-align: center;
+        margin: 20px;
+        font-size: 1.8em;
+    }
+    .highlights {
+        width: 85%;
+        display: block;
+        padding: 10px;
+    }
+    .highlights-video {
+        padding: 0;
+        width: 100%;
+    }
+    .highlights h1 {
+        font-size: 30px;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+    .video-stream {
+        margin-top: 20px;
+    }
+    footer img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
